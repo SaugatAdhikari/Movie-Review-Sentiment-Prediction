@@ -29,3 +29,9 @@ def clean_doc(doc):
     tokens = [word for word in tokens if len(word) > 1]
     return tokens
 
+#load the document
+filename = "review_polarity\\txt_sentoken\\pos\\cv000_29590.txt"
+text = load_doc(filename)
+tokens = clean_doc(text)
+print(tokens)
+
